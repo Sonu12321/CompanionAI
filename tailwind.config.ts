@@ -35,13 +35,13 @@ const config = {
       },
       colors:{
         primary:{
-          DEFAULT: "#3490dc", // primary color
-            light: "#6cb2eb", // light variant
+          DEFAULT: "#F8EDE3", // primary color
+            light: "#021526", // light variant
             dark: "#2779bd",
         },
         secondary:{
-          DEFAULT: "#ffed4a", // secondary color
-            light: "#fff382", // light variant
+          DEFAULT: "#1a202c", // secondary color
+            light: "#6EACDA", // light variant
             dark: "#fff234"
         }
       },

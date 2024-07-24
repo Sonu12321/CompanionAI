@@ -6,7 +6,9 @@ import { Poppins } from 'next/font/google';
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ModeToggle } from './ModeToggle';
-import Link from 'next/link'; // Correct import for Next.js Link
+import { MobileSidebar } from './Mobile-Sidebar';
+
+// import Link from 'next/link'; // Correct import for Next.js Link
 
 const font = Poppins({
   weight: "600",
@@ -15,9 +17,9 @@ const font = Poppins({
 
 export const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between bg-teal-500 p-6 z-4 ">
+    <nav className="flex items-center justify-between bg-gray-900 p-6 z-4 ">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <Menu className='block md:hidden'/>
+        <MobileSidebar />
         <h1 className={cn("hidden md:block text-xl text-blue-300", font.className)}>
           companion ai
         </h1>
@@ -28,8 +30,8 @@ export const Navbar = () => {
           </a>
         </RouterLink>
       </div>
-      <div className='flex items-center gap-x-3'>
-        <Button variant="ghost" size='sm'>
+      <div className='flex items-center gap-x-3 text-blue-300'>
+        <Button variant="destructive" size='sm'>
           Upgrade
           <Sparkles />
         </Button>
