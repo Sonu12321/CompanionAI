@@ -17,6 +17,7 @@ const config = {
         "2xl": "1400px",
       },
     },
+    
     extend: {
       keyframes: {
         "accordion-down": {
@@ -31,6 +32,18 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      colors:{
+        primary:{
+          DEFAULT: "#3490dc", // primary color
+            light: "#6cb2eb", // light variant
+            dark: "#2779bd",
+        },
+        secondary:{
+          DEFAULT: "#ffed4a", // secondary color
+            light: "#fff382", // light variant
+            dark: "#fff234"
+        }
       },
     },
   },

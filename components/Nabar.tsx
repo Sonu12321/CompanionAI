@@ -15,7 +15,7 @@ const font = Poppins({
 
 export const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between bg-teal-500 p-6">
+    <nav className="flex items-center justify-between bg-teal-500 p-6 z-4 ">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <Menu className='block md:hidden'/>
         <h1 className={cn("hidden md:block text-xl text-blue-300", font.className)}>
